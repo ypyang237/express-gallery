@@ -2,13 +2,16 @@
 const express    = require('express'),
       app        = express(),
       bodyParser = require('body-parser'),
-      db = require('./models')
+      db = require('./models'),
+      galleryRoute    = require('./routes/gallery.js')
       ;
 
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
-
-
+app
+  .use(bodyParser.urlencoded({extended: true}))
+  .use(bodyParser.json())
+  .use(express.static('public'))
+  .use('/gallery', galleryRoute)
+  ;
 
 app.listen(3000, function() {
   db.sequelize.sync();
