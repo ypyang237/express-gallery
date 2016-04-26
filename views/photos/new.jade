@@ -1,13 +1,14 @@
 extends ../layout
 
 block content
-  h1 Add a Photo!
-  p Author
-  input(id="author")
-  p Link
-  input(id="link")
-  p Description
-  input(id="description")
-  input(type="submit" id="submitNewPhoto")
+  h2 Add a Photo!
+  article
+    p Author
+    input(id="author")
+    p Link
+    input(id="link")
+    p Description
+    input(id="description")
+    input(type="submit" id="submitNewPhoto")
 
   script(src="/js/new.js")
