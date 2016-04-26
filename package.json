@@ -23,13 +23,15 @@
     "jade": "^1.11.0",
     "pg": "^4.5.3",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^3.21.0"
+    "sequelize": "^3.21.0",
+    "sequelize-cli": "^2.4.0"
   },
   "devDependencies": {
     "Faker": "^0.7.2",
     "browser-sync": "^2.12.5",
     "faker": "^3.1.0",
     "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6",
     "gulp-sass": "^2.3.1"
   }
 }
