@@ -62,8 +62,15 @@ router.route('/:id')
 
 router.route('/:id/edit')
   .get(function(req, res) {
-    console.log('GET', req.body);
-    res.json({success: true});
+    Photo.findAll({
+      where: {
+        id: req.params.id
+      }
+    })
+    .then(function(photo){
+      console.log(photo);
+      res.render('photos/edit', {photo: photo[0].dataValues});
+    });
   });
 
 module.exports = router;
