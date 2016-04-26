@@ -4,8 +4,12 @@ h1(id='indexHeader') Cool Photos
 block content
   div(id="container")
 
-    div
+    div(id="photos")
       each photo in photos
         h1= 'author : '+ photo.author
         h2= 'link : '+ photo.link
         h3= 'description : '+ photo.description
+        button(type="submit" class="edit" data-id=photo.id)|Edit
+        button(type="submit" class="delete"  data-id=photo.id)|Delete
+
+script(src="/js/index.js")

@@ -20,3 +20,4 @@ submitNewPhoto.addEventListener('click', function() {
               }));
 
 });
+
