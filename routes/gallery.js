@@ -8,8 +8,8 @@ const express = require('express'),
 router.route('/')
   .get(function(req, res) {
     Photo.findAll()
-      .then(function(photos){
-        res.send(photos);
+        .then(function(photos) {
+        res.render('photos/index', {photos: photos});
       });
   })
   .post(function(req, res) {
