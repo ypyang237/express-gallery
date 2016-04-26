@@ -21,7 +21,6 @@ router.route('/')
 
 router.route('/new')
   .get(function(req, res) {
-    console.log('GET', req.body);
     res.render('photos/new');
   });
 
