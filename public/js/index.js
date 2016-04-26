@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 var button = document.getElementById('photos');
 button.addEventListener('click', function(event) {
   if(event.target.className === 'edit') {
