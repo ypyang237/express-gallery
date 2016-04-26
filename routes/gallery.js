@@ -22,7 +22,7 @@ router.route('/')
 router.route('/new')
   .get(function(req, res) {
     console.log('GET', req.body);
-    res.json({success: true});
+    res.render('photos/new');
   });
 
 router.route('/:id')

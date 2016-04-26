@@ -6,6 +6,11 @@ const express    = require('express'),
       galleryRoute  = require('./routes/gallery.js')
       ;
 
+  app.set('view engine', 'jade');
+  app.set('views', './views');
+
+
+
 app
   .use(bodyParser.urlencoded({extended: true}))
   .use(bodyParser.json())
