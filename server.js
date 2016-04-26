@@ -3,8 +3,7 @@ const express    = require('express'),
       app        = express(),
       bodyParser = require('body-parser'),
       db = require('./models'),
-      galleryRoute  = require('./routes/gallery.js'),
-      Photo = db.Photo
+      galleryRoute  = require('./routes/gallery.js')
       ;
 
 app
