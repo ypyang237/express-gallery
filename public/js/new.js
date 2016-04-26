@@ -2,14 +2,13 @@ var submitNewPhoto = document.getElementById('submitNewPhoto');
 
 submitNewPhoto.addEventListener('click', function() {
 
-
   var author = document.getElementById('author').value;
   var link = document.getElementById('link').value;
   var description = document.getElementById('description').value;
 
   var request = new XMLHttpRequest();
   request.addEventListener('load', function(data) {
-    console.log('data', data);
+    window.location='/gallery';
   });
 
   request.open('POST', '/gallery');
@@ -19,4 +18,6 @@ submitNewPhoto.addEventListener('click', function() {
                 description : description
               }));
 
+
 });
+

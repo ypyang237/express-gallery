@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+html {
+  max-width: 100%;
+  font-family: 'Ubuntu', sans-serif; }
+  html h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #003366; }
+
+img {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  border: 1px grey;
+  border-radius: 15px;
+  max-width: 80%;
+  padding: 20px; }
