@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 html {
   max-width: 100%;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Ubuntu', sans-serif;
+  background-color: lightgreen; }
   html h1 {
     text-align: center;
     font-size: 40px;
