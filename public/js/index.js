@@ -15,3 +15,8 @@ button.addEventListener('click', function(event) {
     deleteReq.send();
   }
 });
+
+var addButton = document.getElementById('new_photo');
+addButton.addEventListener('click', function(){
+  window.location='/gallery/new';
+});

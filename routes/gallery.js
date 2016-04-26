@@ -68,7 +68,6 @@ router.route('/:id/edit')
       }
     })
     .then(function(photo){
-      console.log(photo);
       res.render('photos/edit', {photo: photo[0].dataValues});
     });
   });
