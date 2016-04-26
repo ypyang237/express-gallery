@@ -2,7 +2,6 @@ var submitNewPhoto = document.getElementById('submitNewPhoto');
 
 submitNewPhoto.addEventListener('click', function() {
 
-
   var author = document.getElementById('author').value;
   var link = document.getElementById('link').value;
   var description = document.getElementById('description').value;
