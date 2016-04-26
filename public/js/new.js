@@ -8,7 +8,7 @@ submitNewPhoto.addEventListener('click', function() {
 
   var request = new XMLHttpRequest();
   request.addEventListener('load', function(data) {
-    console.log('data', data);
+    window.location='/gallery';
   });
 
   request.open('POST', '/gallery');
@@ -17,6 +17,7 @@ submitNewPhoto.addEventListener('click', function() {
                 link : link,
                 description : description
               }));
+
 
 });
 
