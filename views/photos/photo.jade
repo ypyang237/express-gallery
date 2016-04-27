@@ -1,9 +1,10 @@
 extends ../layout
 
 block content
-  article
-  h2= 'author : '+ photo.author
-  img(src= photo.link)
-  h3= 'description : '+ photo.description
+  article(class="photo")
+    h2= photo.author
+    h3= photo.link
+    img(src= photo.link)
+    h3= 'description : '+ photo.description
 
   script(src="/js/edit.js")
