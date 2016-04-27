@@ -2,13 +2,13 @@ extends ../layout
 
 block content
   h2 Add a Photo!
-  article
+  article(class="form")
     p Author
     input(id="author")
     p Link
     input(id="link")
     p Description
-    input(id="description")
+    textarea(id="description")
     br
     button(id="submitNewPhoto" class="btn btn-blue btn-border-o")|Submit
 

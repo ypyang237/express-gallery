@@ -2,13 +2,13 @@ extends ../layout
 
 block content
   h2 Edit a Photo!
-  article
+  article(class="form")
     p Author
     input(id="author" value=photo.author)
     p Link
     input(id="link" value=photo.link)
     p Description
-    input(id="description" value=photo.description)
+    textarea(id="description") #{photo.description}
     div
       button(id="editFieldsBtn" class="btn btn-blue btn-border-o" data-id=photo.id)|Submit Changes
 
