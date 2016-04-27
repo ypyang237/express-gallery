@@ -10,14 +10,18 @@ html {
   max-width: 100%;
   font-family: 'Ubuntu', sans-serif;
   color: $fontdescolor;
+  display: flex;
+  justify-content: center;
+
+
 
   h1 {
     font-size: 45px;
     font-weight: bold;
     color: $fontheadercolor;
     margin-top: 20px;
-    margin-left: 10%;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   h2 {
@@ -63,6 +67,38 @@ html {
     margin-left: 10%;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding: 5px;
+
+  }
+
+  input {
+    width: 80%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    margin-left: 10%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+
+  }
+
+  #description {
+     height: 100px;
+  }
+
+  #editFieldsBtn {
+    font-size: 12px;
+    padding: 2px;
+    line-height: 20px;
+    margin-left: 10%;
+    margin-top: 18px;
+    margin-bottom: 2px;
+  }
+
+  #submitNewPhoto {
+    margin-left: 10%;
+    margin-top: 8px;
+    margin-bottom: 2px;
   }
 
   #photos {
