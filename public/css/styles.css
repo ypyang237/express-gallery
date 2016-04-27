@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
-/* line 4, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+/* line 4, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
 html {
   max-width: 100%;
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: normal; }
-  /* line 10, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 10, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html h1 {
     position: relative;
     font-size: 40px;
@@ -15,19 +15,19 @@ html {
     margin-bottom: 0.5rem;
     margin-top: 0.2rem; }
 
-/* line 22, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+/* line 22, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
 article {
   text-align: center; }
 
-/* line 26, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+/* line 26, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
 input {
   padding: 3px; }
 
-/* line 30, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+/* line 30, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
 #submitNewPhoto {
   padding: 2px; }
 
-/* line 34, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+/* line 34, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
 img {
   box-sizing: border-box;
   height: 200px;
@@ -39,11 +39,11 @@ img {
   padding: 20px; }
 
 @media screen and (max-width: 600px) {
-  /* line 49, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 49, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html {
     background-color: floral-white; } }
 
 @media screen and (min-width: 600px) {
-  /* line 49, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 49, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html {
     background-color: lightyellow; } }
