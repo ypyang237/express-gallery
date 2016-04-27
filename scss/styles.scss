@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
+
 html {
   max-width: 100%;
   font-family: 'Ubuntu', sans-serif;
@@ -15,12 +16,6 @@ html {
     margin-bottom: 0.5rem;
     margin-top: 0.2rem;
   }
-
-
-
-
-  background-color: lightgreen;
-
 }
 
 
@@ -47,4 +42,14 @@ img {
   padding: 20px;
 
 
+$break-small: 600px;
+$break-large: 1200px;
+
+body {
+  @media screen and (max-width: $break-small) {
+    background-color: green;
+  }
+  @media screen and (min-width: $break-small) {
+    background-color: blue;
+  }
 }
