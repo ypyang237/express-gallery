@@ -1,26 +1,49 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
-<<<<<<< HEAD
+/* line 4, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
 html {
   max-width: 100%;
   font-family: 'Ubuntu', sans-serif;
-  background-color: lightgreen; }
-  html #wrapper h1 {
-    font-size: 40px;
-    text-shadow: rgba(0, 0, 0, 0.2) 0 14px 5px, rgba(0, 0, 0, 0.1) 0 20px 10px, rgba(0, 0, 0, 0.2) 0 15px 80px; }
-  html h2 {
-    text-align: center; }
-  html article {
-    text-align: center; }
-  html input {
-    padding: 3px; }
-  html #submitNewPhoto {
-    padding: 2px; }
-=======
+  font-style: normal;
+  font-weight: normal; }
+  /* line 10, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  html h1, html h2 {
+    position: relative;
+    font-size: 70px;
+    margin-top: 0;
+    color: #222222;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem; }
+
+/* line 22, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+article {
+  text-align: center; }
+
+/* line 26, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+input {
+  padding: 3px; }
+
+/* line 30, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+#submitNewPhoto {
+  padding: 2px; }
+
+/* line 34, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+img {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  border: 1px grey;
+  border-radius: 15px;
+  max-width: 80%;
+  padding: 20px; }
+
 @media screen and (max-width: 600px) {
-  body {
+  /* line 49, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  html {
     background-color: green; } }
->>>>>>> 72cedcfd173c1f8c907384bb821e5fae868a6485
 
 @media screen and (min-width: 600px) {
-  body {
+  /* line 49, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  html {
     background-color: blue; } }

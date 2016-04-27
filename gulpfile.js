@@ -9,40 +9,40 @@ const reload      = browserSync.reload;
 
 gulp.task('nodemon', function (cb) {
 
-  var started = false;
+ var started = false;
 
-  return nodemon({
-    script : 'server.js'
-  }).on('start', function () {
-    if (!started) {
-      cb();
-      started = true;
-    }
-  });
+ return nodemon({
+   script : 'server.js'
+ }).on('start', function () {
+   if (!started) {
+     cb();
+     started = true;
+   }
+ });
 });
 
 gulp.task('browser-sync', ['nodemon'], function() {
-  browserSync.init(null, {
-    proxy : 'http://localhost:3000',
-    files : ['public/**/*.*'],
-    // browser : 'google chrome',
-    port : 7000
-  });
+ browserSync.init(null, {
+   proxy : 'http://localhost:3000',
+   files : ['public/**/*.*'],
+   // browser : 'google chrome',
+   port : 7000
+ });
 });
 
 gulp.task('sass', function () {
-  return gulp.src('./sass/*.scss')
-      .pipe(sass({
-        errLogToConsole : true,
-        sourceComments : true
-      }).on('error', sass.logError))
-      .pipe(gulp.dest('./public/css'))
-      .pipe(reload({ stream : true }));
+ return gulp.src('./scss/*.scss')
+     .pipe(sass({
+       errLogToConsole : true,
+       sourceComments : true
+     }).on('error', sass.logError))
+     .pipe(gulp.dest('./public/css'))
+     .pipe(reload({ stream : true }));
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
-  gulp.watch('./public/**/*.*').on('change', reload);
+ gulp.watch('./scss/**/*.scss', ['sass']);
+ gulp.watch('./public/**/*.*').on('change', reload);
 });
 
 gulp.task('default', ['watch', 'sass', 'browser-sync']);

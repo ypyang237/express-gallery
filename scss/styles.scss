@@ -40,12 +40,13 @@ img {
   border-radius: 15px;
   max-width: 80%;
   padding: 20px;
+}
 
 
 $break-small: 600px;
 $break-large: 1200px;
 
-body {
+html {
   @media screen and (max-width: $break-small) {
     background-color: green;
   }
