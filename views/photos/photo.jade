@@ -1,10 +1,12 @@
 extends ../layout
 
 block content
-  article(class="photo")
+  article(class="photo" id="photos")
     h2= photo.author
     h3= photo.link
     img(src= photo.link)
     h3= photo.description
+    button(type="submit" id="edit" data-id=photo.id class="btn btn-blue btn-border-o")|Edit
+    button(type="submit" id="delete"  data-id=photo.id class="btn btn-blue btn-border-o")|Delete
 
-  script(src="/js/edit.js")
+  script(src="/js/photo.js")

@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import './partials/button.scss';
+
 $break-small: 600px;
 $break-large: 1200px;
 $fontheadercolor: hsl(290,0%,49%);
@@ -40,6 +42,40 @@ html {
     max-width: 100%;
     padding: 10%;
     padding-top: 5px;
+    padding-bottom: 5%;
+  }
+
+  button {
+    margin-left: 10%;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  #delete {
+    margin-left: 2px;
+  }
+
+  #edit {
+    margin-left: 10%;
+  }
+
+  p {
+    font-size: 12px;
+    margin-left: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #photos {
+    img {
+      padding-bottom: 10px;
+      padding-top: 30px;
+    }
+  }
+
+  #new_photo {
+    float: right;
+    margin-right: 10%;
+    margin-top: 0px;
   }
 
   @media screen and (max-width: $break-small) {
@@ -49,6 +85,18 @@ html {
   @media screen and (min-width: $break-small) {
     background-color: lightyellow;
   }
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
