@@ -3,10 +3,17 @@ html {
   max-width: 100%;
   font-family: 'Ubuntu', sans-serif;
   background-color: lightgreen; }
-  html h1 {
-    text-align: center;
+  html #wrapper h1 {
     font-size: 40px;
-    color: #003366; }
+    text-shadow: rgba(0, 0, 0, 0.2) 0 14px 5px, rgba(0, 0, 0, 0.1) 0 20px 10px, rgba(0, 0, 0, 0.2) 0 15px 80px; }
+  html h2 {
+    text-align: center; }
+  html article {
+    text-align: center; }
+  html input {
+    padding: 3px; }
+  html #submitNewPhoto {
+    padding: 2px; }
 
 img {
   box-sizing: border-box;
