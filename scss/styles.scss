@@ -1,29 +1,53 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+// @import "partials/reset.scss";
+// @import "partials/optimisation.scss";
 
-html {
-  max-width: 100%;
-  font-family: 'Ubuntu', sans-serif;
+// html {
+//   max-width: 100%;
+//   font-family: 'Ubuntu', sans-serif;
 
-  h1 {
-    text-align: center;
-    font-size: 40px;
-    color: hsla(210,100%,20%,1);
+//   h1 {
+//     text-align: center;
+//     font-size: 40px;
+//     color: hsla(210,100%,20%,1);
+//   }
+
+//   // @include respond-to('small') {
+//   //   background-color: lightgreen;
+//   // }
+
+//   // @include respond-to('medium') {
+//   //   background-color: lightblue;
+//   // }
+//   // @include respond-to('large') {
+//   //   background-color: lightyellow;
+//   // }
+
+// }
+
+$break-small: 600px;
+$break-large: 1200px;
+
+body {
+  @media screen and (max-width: $break-small) {
+    background-color: green;
   }
-
-  background-color: lightgreen;
-
+  @media screen and (min-width: $break-small) {
+    background-color: blue;
+  }
 }
 
 
-img {
-  box-sizing: border-box;
-  height: 200px;
-  width: 200px;
-  padding: 5px;
-  border: 1px grey;
-  border-radius: 15px;
-  max-width: 80%;
-  padding: 20px;
+
+// img {
+//   box-sizing: border-box;
+//   height: 200px;
+//   width: 200px;
+//   padding: 5px;
+//   border: 1px grey;
+//   border-radius: 15px;
+//   max-width: 80%;
+//   padding: 20px;
 
 
-}
+// }

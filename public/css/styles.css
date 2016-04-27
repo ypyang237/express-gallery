@@ -1,19 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
-html {
-  max-width: 100%;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: lightgreen; }
-  html h1 {
-    text-align: center;
-    font-size: 40px;
-    color: #003366; }
+@media screen and (max-width: 600px) {
+  body {
+    background-color: green; } }
 
-img {
-  box-sizing: border-box;
-  height: 200px;
-  width: 200px;
-  padding: 5px;
-  border: 1px grey;
-  border-radius: 15px;
-  max-width: 80%;
-  padding: 20px; }
+@media screen and (min-width: 600px) {
+  body {
+    background-color: blue; } }
