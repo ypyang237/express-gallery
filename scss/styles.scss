@@ -10,30 +10,36 @@ html {
   color: $fontdescolor;
 
   h1 {
-    font-size: 40px;
-    margin-top: 10px;
+    font-size: 45px;
+    font-weight: bold;
     color: $fontheadercolor;
+    margin-top: 20px;
     margin-left: 10%;
-    letter-spacing: 3px;
+    margin-bottom: 40px;
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: bold;
     margin-left: 10%;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    margin-right: 10%;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 10%;
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    margin-right: 10%;
   }
 
   img {
+    margin-top: 1px;
     box-sizing: border-box;
     max-width: 100%;
     padding: 10%;
+    padding-top: 5px;
   }
 
   @media screen and (max-width: $break-small) {
