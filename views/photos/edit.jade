@@ -1,13 +1,15 @@
 extends ../layout
 
 block content
-  h1 Edit a Photo!
-  p Author
-  input(id="author" value=photo.author)
-  p Link
-  input(id="link" value=photo.link)
-  p Description
-  input(id="description" value=photo.description)
-  button(id="editFieldsBtn" data-id=photo.id)|Submit Changes
+  h2 Edit a Photo!
+  article
+    p Author
+    input(id="author" value=photo.author)
+    p Link
+    input(id="link" value=photo.link)
+    p Description
+    input(id="description" value=photo.description)
+    div
+      button(id="editFieldsBtn" data-id=photo.id)|Submit Changes
 
   script(src="/js/edit.js")

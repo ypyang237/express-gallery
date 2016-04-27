@@ -8,7 +8,8 @@ block content
     div(id="photos")
       each photo in photos
         h2= 'author : '+ photo.author
-        img(src= photo.link)
+        a(href='/gallery/' + photo.id)
+          img(src= photo.link)
         h3= 'description : '+ photo.description
         button(type="submit" class="edit" data-id=photo.id)|Edit
         button(type="submit" class="delete"  data-id=photo.id)|Delete

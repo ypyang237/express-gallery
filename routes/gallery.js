@@ -31,8 +31,8 @@ router.route('/:id')
         id : req.params.id
       }
     })
-    .then(function(photos){
-      res.send(photos);
+    .then(function(photo){
+      res.render('photos/photo', {photo: photo[0]});
     });
   })
   .put(function(req, res) {

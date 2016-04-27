@@ -7,9 +7,9 @@ html {
   font-style: normal;
   font-weight: normal;
 
-  h1, h2 {
+  h1 {
     position: relative;
-    font-size: 70px;
+    font-size: 40px;
     margin-top: 0;
     color: #222222;
     line-height: 1.4;
@@ -48,9 +48,9 @@ $break-large: 1200px;
 
 html {
   @media screen and (max-width: $break-small) {
-    background-color: green;
+    background-color: floral-white;
   }
   @media screen and (min-width: $break-small) {
-    background-color: blue;
+    background-color: lightyellow;
   }
 }
