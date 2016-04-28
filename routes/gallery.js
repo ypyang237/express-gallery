@@ -32,7 +32,23 @@ router.route('/:id')
       }
     })
     .then(function(photo){
-      res.render('photos/photo', {photo: photo[0]});
+      Photo.findAll({})
+      .then(function(photos){
+        var otherPhotos = [];
+
+        for (var i = 0; i < 3; i++){
+          otherPhotos.push(
+            photos[Math.floor(Math.random() * photos.length )]
+          );
+        }
+
+        res.render('photos/photo', {
+          photo: photo[0],
+          otherPhotos: otherPhotos
+        });
+      });
+
+
     });
   })
   .put(function(req, res) {

@@ -189,6 +189,21 @@ html {
     }
   }
 
+  article {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 80%;
+
+    img {
+      max-width: 60%;
+    }
+
+    .side_photo {
+      max-width: 40%;
+    }
+  }
+
 }
 
 

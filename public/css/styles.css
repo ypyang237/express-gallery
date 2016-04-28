@@ -384,3 +384,14 @@ html {
     /* line 185, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html .form h2 {
       font-size: 30px; } }
+  /* line 192, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+  html article {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 80%; }
+    /* line 198, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    html article img {
+      max-width: 60%; }
+    /* line 202, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    html article .side_photo {
+      max-width: 40%; }
