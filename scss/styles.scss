@@ -157,11 +157,38 @@ html {
 
   @media screen and (max-width: $break-small) {
     background-color: lightblue;
+
+    .side_photo {
+      visibility: hidden;
+      width: 0px;
+    }
+
+    #main_photo {
+      max-width: 350px;
+
+      img {
+        max-width: 350px;
+      }
+
+      h3 {
+        max-width: 350px;
+      }
+
+    }
+
   }
 
   @media screen and (max-width: $break-medium ) and (min-width: $break-small ) {
-    background-color: red;
+    background-color: lightyellow;
 
+    .side_photo {
+      visibility: hidden;
+      width: 0px;
+    }
+
+    h2 {
+      margin-left: 3%;
+    }
 
   }
 
@@ -218,16 +245,21 @@ html {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      max-width: 500px;
+
+      @media screen and (min-width: $break-medium ) {
+        max-width: 500px;
+
+        img {
+          max-width: 500px;
+        }
+      }
 
       h3 {
         margin-left: 2px;
         margin-top: 20px;
       }
 
-      img {
-        max-width: 500px;
-      }
+
 
       h2 {
         margin-left: 0px;

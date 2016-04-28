@@ -362,78 +362,101 @@ html {
   @media screen and (max-width: 600px) {
     /* line 13, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html {
-      background-color: lightblue; } }
+      background-color: lightblue; }
+      /* line 161, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      html .side_photo {
+        visibility: hidden;
+        width: 0px; }
+      /* line 166, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      html #main_photo {
+        max-width: 350px; }
+        /* line 169, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+        html #main_photo img {
+          max-width: 350px; }
+        /* line 173, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+        html #main_photo h3 {
+          max-width: 350px; } }
   @media screen and (max-width: 980px) and (min-width: 600px) {
     /* line 13, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html {
-      background-color: red; } }
+      background-color: lightyellow; }
+      /* line 184, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      html .side_photo {
+        visibility: hidden;
+        width: 0px; }
+      /* line 189, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      html h2 {
+        margin-left: 3%; } }
   @media screen and (min-width: 980px) {
     /* line 13, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html {
       background-color: floral-white; }
-      /* line 171, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      /* line 198, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
       html h1 {
         font-size: 60px; } }
-  /* line 178, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+  /* line 205, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html .form p {
     margin-top: 10px;
     font-size: 16px; }
-  /* line 183, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+  /* line 210, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html .form h2 {
     font-size: 20px; }
   @media screen and (min-width: 1024px) {
-    /* line 188, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    /* line 215, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html .form p {
       font-size: 24px; }
-    /* line 192, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    /* line 219, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html .form h2 {
       font-size: 30px; } }
-  /* line 199, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+  /* line 226, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html #photo_title {
     margin-left: 0px; }
-    /* line 202, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    /* line 229, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html #photo_title h2 {
       margin-left: 3%; }
-    /* line 206, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    /* line 233, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html #photo_title h3 {
       margin-left: 3%; }
-  /* line 211, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+  /* line 238, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html article {
     display: flex;
     justify-content: center;
     max-width: 80%;
     margin-left: 10%; }
-    /* line 217, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    /* line 244, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html article #main_photo {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      max-width: 500px; }
-      /* line 223, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      align-items: flex-start; }
+      @media screen and (min-width: 980px) {
+        /* line 244, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+        html article #main_photo {
+          max-width: 500px; }
+          /* line 252, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+          html article #main_photo img {
+            max-width: 500px; } }
+      /* line 257, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
       html article #main_photo h3 {
         margin-left: 2px;
         margin-top: 20px; }
-      /* line 228, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
-      html article #main_photo img {
-        max-width: 500px; }
-      /* line 232, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      /* line 264, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
       html article #main_photo h2 {
         margin-left: 0px; }
-      /* line 236, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      /* line 268, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
       html article #main_photo #edit {
         margin-left: 0px; }
-      /* line 240, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      /* line 272, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
       html article #main_photo #delete {
         margin-left: 0px; }
-    /* line 246, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    /* line 278, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html article .side_photo {
       margin-left: 10px;
       display: flex;
       flex-direction: column;
       max-width: 40%; }
-      /* line 252, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      /* line 284, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
       html article .side_photo .each_side_photo {
         flex: 1 1 auto; }
-        /* line 255, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+        /* line 287, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
         html article .side_photo .each_side_photo img {
           max-width: 300px; }
