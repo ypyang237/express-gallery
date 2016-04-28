@@ -1,9 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import './partials/button.scss';
 @import './partials/homepage.scss';
+@import './partials/forms.scss';
 
 $break-small: 600px;
-$break-large: 900px;
+$break-medium: 980px;
+$break-large: 1024px;
 $fontheadercolor: hsl(290,0%,49%);
 $fontdescolor: hsl(290,0%,50%);
 $fontformcolor: hsl(290,0%,70%);
@@ -15,7 +17,6 @@ html {
   color: $fontdescolor;
   display: flex;
   justify-content: center;
-
 
 
   h1 {
@@ -43,13 +44,14 @@ html {
     margin-right: 10%;
   }
 
-  img {
+  #first_image {
     margin-top: 1px;
     box-sizing: border-box;
-    max-width: 100%;
-    padding: 10%;
+    max-width: 80%;
     padding-top: 5px;
     padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   button {
@@ -119,12 +121,33 @@ html {
     width: 80%;
   }
 
-  #photos {
-    img {
-      padding-bottom: 10px;
-      padding-top: 30px;
+  #container {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+    justify-content: space-around;
+
+    .photo {
+      margin-left: 1%;
+      margin-right: 1%;
+      margin-bottom: 20px;
+
+      p {
+        margin-left: 0px;
+      }
+
+      img {
+        max-height: 350px;
+        max-width: 350px;
+        margin-bottom: 5px;
+      }
     }
+
   }
+
 
   #new_photo {
     float: right;
@@ -132,12 +155,46 @@ html {
     margin-top: 0px;
   }
 
+
   @media screen and (max-width: $break-small) {
-    background-color: floral-white;
+    background-color: lightblue;
+
+    .side_photo {
+      visibility: hidden;
+      width: 0px;
+    }
+
+    #main_photo {
+      max-width: 350px;
+
+      img {
+        max-width: 350px;
+      }
+
+      h3 {
+        max-width: 350px;
+      }
+
+    }
+
   }
 
-  @media screen and (min-width: $break-large) {
-    background-color: hsl(200, 100%, 95%);
+  @media screen and (max-width: $break-medium ) and (min-width: $break-small ) {
+    background-color: lightyellow;
+
+    .side_photo {
+      visibility: hidden;
+      width: 0px;
+    }
+
+    h2 {
+      margin-left: 3%;
+    }
+
+  }
+
+  @media screen and (min-width: $break-medium) {
+    background-color: floral-white;
 
     h1 {
       font-size: 60px;
@@ -166,6 +223,79 @@ html {
 
     }
   }
+
+  #photo_title {
+    margin-left: 0px;
+
+    h2 {
+      margin-left: 3%;
+    }
+
+    h3 {
+      margin-left: 3%;
+    }
+  }
+
+  article {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    margin-left: 10%;
+
+    #main_photo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @media screen and (min-width: $break-medium ) {
+        max-width: 500px;
+
+        img {
+          max-width: 500px;
+        }
+      }
+
+      h3 {
+        margin-left: 2px;
+        margin-top: 20px;
+      }
+
+
+
+      h2 {
+        margin-left: 0px;
+      }
+
+      #edit {
+        margin-left: 0px;
+      }
+
+      #delete {
+        margin-left: 0px;
+      }
+
+    }
+
+    .side_photo {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      max-width: 40%;
+
+      .each_side_photo {
+        flex: 1 1 auto;
+
+        img {
+          max-width: 300px;
+        }
+
+      }
+
+
+    }
+
+  }
+
 
 }
 
