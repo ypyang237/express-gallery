@@ -17,7 +17,6 @@ html {
   justify-content: center;
 
 
-
   h1 {
     font-size: 45px;
     font-weight: bold;
@@ -43,13 +42,14 @@ html {
     margin-right: 10%;
   }
 
-  img {
+  #first_image {
     margin-top: 1px;
     box-sizing: border-box;
-    max-width: 100%;
-    padding: 10%;
+    max-width: 80%;
     padding-top: 5px;
     padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   button {
@@ -119,12 +119,33 @@ html {
     width: 80%;
   }
 
-  #photos {
-    img {
-      padding-bottom: 10px;
-      padding-top: 30px;
+  #container {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+    justify-content: space-around;
+
+    .photo {
+      margin-left: 1%;
+      margin-right: 1%;
+      margin-bottom: 20px;
+
+      p {
+        margin-left: 0px;
+      }
+
+      img {
+        max-height: 350px;
+        max-width: 350px;
+        margin-bottom: 5px;
+      }
     }
+
   }
+
 
   #new_photo {
     float: right;
@@ -132,12 +153,13 @@ html {
     margin-top: 0px;
   }
 
+
   @media screen and (max-width: $break-small) {
     background-color: floral-white;
   }
 
   @media screen and (min-width: $break-large) {
-    background-color: hsl(200, 100%, 95%);
+    background-color: floral-white;
 
     h1 {
       font-size: 60px;

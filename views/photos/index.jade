@@ -3,12 +3,13 @@ extends ../layout
 h1(id='indexHeader') Cool Photos
 
 block content
-  div(id="first_image")
+  button(id="new_photo" class="btn btn-blue btn-border-o")|Add a Photo
+
+  img(id="first_image" src="https://unsplash.it/1500/750")
 
   div(id="container")
-    button(id="new_photo" class="btn btn-blue btn-border-o")|Add a Photo
-    div(id="photos")
-      each photo in photos
+    each photo in photos
+      div(class="photo")
         a(href='/gallery/' + photo.id)
           img(src= photo.link)
         p= photo.author

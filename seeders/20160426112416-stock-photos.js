@@ -6,10 +6,10 @@ module.exports = {
   up: function (queryInterface, Sequelize) {
 
     let pictures = [];
-    for(let i = 0; i < 200; i++) {
+    for(let i = 0; i < 20; i++) {
       pictures.push( {
         author : faker.name.findName(),
-        link : "https://unsplash.it/" + 750 + "/" + (500 + Math.floor( Math.random() * 100)),
+        link : "https://unsplash.it/" + 500 + "/" + (340 + Math.floor( Math.random() * 20)),
         description: faker.lorem.paragraph(),
         createdAt : new Date(),
         updatedAt : new Date()
