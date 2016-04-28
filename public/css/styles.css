@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
-/* line 1, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+/* line 1, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
 .btn {
   display: inline-block;
   line-height: 35px;
@@ -10,16 +10,16 @@
   opacity: .999;
   border-radius: 3px; }
 
-/* line 20, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+/* line 20, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
 .animate, .btn, .btn-border-o:before, .btn-border-o:after {
   transition: all 0.3s; }
 
-/* line 25, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+/* line 25, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
 .btn-border-o {
   background-color: transparent;
   border: 1px solid #d0d0d0;
   color: #B8B8B8; }
-  /* line 30, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+  /* line 30, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
   .btn-border-o:before, .btn-border-o:after {
     content: '';
     border-style: solid;
@@ -27,7 +27,7 @@
     z-index: 5;
     border-radius: 3px;
     box-sizing: content-box; }
-  /* line 41, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+  /* line 41, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
   .btn-border-o:before {
     width: 0;
     height: 100%;
@@ -35,47 +35,42 @@
     top: -1px;
     left: 0;
     transition-delay: 0.05s; }
-  /* line 50, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+  /* line 50, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
   .btn-border-o:after {
     width: 100%;
     height: 0;
     border-width: 0 1px 0 1px;
     top: 0;
     left: -1px; }
-  /* line 58, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+  /* line 58, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
   .btn-border-o:hover {
     cursor: hand; }
-    /* line 62, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+    /* line 62, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
     .btn-border-o:hover:before {
       width: 100%; }
-    /* line 66, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+    /* line 66, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
     .btn-border-o:hover:after {
       height: 100%; }
-  /* line 75, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+  /* line 75, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
   .btn-border-o.btn-blue:before, .btn-border-o.btn-blue:after {
     border-color: #3498db; }
-  /* line 80, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/button.scss */
+  /* line 80, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/button.scss */
   .btn-border-o.btn-blue:hover {
     color: #3498db; }
 
-/* line 1, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 1, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 *, *:before, *:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* line 7, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
-body {
-  overflow: hidden;
-  background: #fff3e0; }
-
-/* line 12, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 7, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 svg {
   width: 0;
   height: 0;
   display: block; }
 
-/* line 18, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 13, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .grid {
   width: 80vmin;
   margin: 10vmin auto;
@@ -92,7 +87,7 @@ svg {
   -webkit-perspective: 2000;
   perspective: 2000; }
 
-/* line 35, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 30, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box {
   position: relative;
   width: 26.66667vmin;
@@ -103,55 +98,55 @@ svg {
   -webkit-transition: all 0.225s cubic-bezier(0.65, 0.05, 0.36, 1) 0.225s;
   transition: all 0.225s cubic-bezier(0.65, 0.05, 0.36, 1) 0.225s; }
 
-/* line 45, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 40, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:nth-child(1) .puzzle:before {
   background-image: url("https://unsplash.it/600/600?image=1011"); }
 
-/* line 48, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 43, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:nth-child(2) .puzzle:before {
   background-image: url("https://unsplash.it/600/600?image=1006"); }
 
-/* line 51, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 46, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:nth-child(3) .puzzle:before {
   background-image: url("https://unsplash.it/600/600?image=883"); }
 
-/* line 54, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 49, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:nth-child(4) .puzzle:before {
   background-image: url("https://unsplash.it/600/600?image=1074"); }
 
-/* line 57, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 52, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:nth-child(5) .puzzle:before {
   background-image: url("https://unsplash.it/600/600?image=823"); }
 
-/* line 60, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 55, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:nth-child(6) .puzzle:before {
   background-image: url("https://unsplash.it/600/600?image=64"); }
 
-/* line 63, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 58, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:nth-child(7) .puzzle:before {
   background-image: url("https://unsplash.it/600/600?image=65"); }
 
-/* line 66, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 61, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:nth-child(8) .puzzle:before {
   background-image: url("https://unsplash.it/600/600?image=839"); }
 
-/* line 69, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 64, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:nth-child(9) .puzzle:before {
   background-image: url("https://unsplash.it/600/600?image=832"); }
 
-/* line 72, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 67, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:hover {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
   box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2); }
 
-/* line 77, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 72, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box:hover .puzzle {
   -webkit-transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
   transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
   opacity: 1; }
 
-/* line 82, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 77, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .item-box .item-container {
   position: absolute;
   top: 50%;
@@ -159,7 +154,7 @@ svg {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
-/* line 90, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 85, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .piece {
   position: absolute;
   width: 13.33333vmin;
@@ -167,51 +162,51 @@ svg {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
-/* line 97, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 92, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .piece:nth-child(1) {
   -webkit-transform: translateX(-100%) translateY(-100%) rotate(0deg);
   transform: translateX(-100%) translateY(-100%) rotate(0deg); }
 
-/* line 101, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 96, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .piece:nth-child(1) .puzzle:before {
   background-position: 0% 0%;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg); }
 
-/* line 106, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 101, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .piece:nth-child(2) {
   -webkit-transform: translateX(0%) translateY(-100%) rotate(90deg);
   transform: translateX(0%) translateY(-100%) rotate(90deg); }
 
-/* line 110, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 105, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .piece:nth-child(2) .puzzle:before {
   background-position: 100% 0%;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-/* line 115, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 110, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .piece:nth-child(3) {
   -webkit-transform: translateX(0%) translateY(0%) rotate(180deg);
   transform: translateX(0%) translateY(0%) rotate(180deg); }
 
-/* line 119, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 114, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .piece:nth-child(3) .puzzle:before {
   background-position: 100% 100%;
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg); }
 
-/* line 124, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 119, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .piece:nth-child(4) {
   -webkit-transform: translateX(-100%) translateY(0%) rotate(270deg);
   transform: translateX(-100%) translateY(0%) rotate(270deg); }
 
-/* line 128, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 123, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .piece:nth-child(4) .puzzle:before {
   background-position: 0% 100%;
   -webkit-transform: rotate(-270deg);
   transform: rotate(-270deg); }
 
-/* line 134, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 129, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .puzzle {
   position: absolute;
   width: 17.17505vmin;
@@ -225,7 +220,7 @@ svg {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: all 0.45s cubic-bezier(0.65, 0.05, 0.36, 1); }
 
-/* line 147, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/partials/homepage.scss */
+/* line 142, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/partials/homepage.scss */
 .puzzle:before {
   content: "";
   position: absolute;
@@ -243,14 +238,14 @@ svg {
     -webkit-transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
     transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0); } }
 
-/* line 12, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+/* line 12, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
 html {
   max-width: 100%;
   font-family: 'Ubuntu', sans-serif;
   color: gray;
   display: flex;
   justify-content: center; }
-  /* line 21, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 21, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html h1 {
     font-size: 45px;
     font-weight: bold;
@@ -258,21 +253,21 @@ html {
     margin-top: 20px;
     margin-bottom: 40px;
     text-align: center; }
-  /* line 30, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 30, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html h2 {
     font-size: 20px;
     font-weight: bold;
     margin-left: 10%;
     margin-bottom: 0px;
     margin-right: 10%; }
-  /* line 38, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 38, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html h3 {
     font-size: 18px;
     margin-left: 10%;
     margin-top: 5px;
     margin-bottom: 10px;
     margin-right: 10%; }
-  /* line 46, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 46, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html img {
     margin-top: 1px;
     box-sizing: border-box;
@@ -280,24 +275,24 @@ html {
     padding: 10%;
     padding-top: 5px;
     padding-bottom: 5%; }
-  /* line 55, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 55, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html button {
     margin-left: 10%;
     font-family: 'Ubuntu', sans-serif; }
-  /* line 60, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 60, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html #delete {
     margin-left: 2px; }
-  /* line 64, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 64, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html #edit {
     margin-left: 10%; }
-  /* line 68, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 68, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html p {
     font-size: 12px;
     margin-left: 10%;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 5px; }
-  /* line 77, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 77, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html input {
     width: 80%;
     font-family: 'Ubuntu', sans-serif;
@@ -308,7 +303,7 @@ html {
     padding: 5px;
     border: 1px solid #ccc;
     color: gray; }
-  /* line 89, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 89, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html #description {
     margin-top: 6px;
     padding-top: 10px;
@@ -319,7 +314,7 @@ html {
     margin-left: 10%;
     border: 1px solid #ccc;
     color: gray; }
-  /* line 102, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 102, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html #editFieldsBtn {
     font-size: 12px;
     padding: 2px;
@@ -328,7 +323,7 @@ html {
     margin-top: 18px;
     margin-bottom: 2px;
     width: 80%; }
-  /* line 112, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 112, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html #submitNewPhoto {
     font-size: 12px;
     padding: 2px;
@@ -337,27 +332,46 @@ html {
     margin-top: 18px;
     margin-bottom: 2px;
     width: 80%; }
-  /* line 123, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 123, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html #photos img {
     padding-bottom: 10px;
     padding-top: 30px; }
-  /* line 129, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 129, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
   html #new_photo {
     float: right;
     margin-right: 10%;
     margin-top: 0px; }
   @media screen and (max-width: 600px) {
-    /* line 12, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+    /* line 12, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html {
       background-color: floral-white; } }
-  @media screen and (min-width: 600px) {
-    /* line 12, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  @media screen and (min-width: 900px) {
+    /* line 12, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
     html {
+<<<<<<< HEAD
       background-color: lightyellow; } }
   /* line 147, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html .form p {
     margin-top: 10px;
     font-size: 16px; }
   /* line 152, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+=======
+      background-color: #e6f7ff; }
+      /* line 142, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+      html h1 {
+        font-size: 60px; } }
+  /* line 149, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+  html .form p {
+    margin-top: 10px;
+    font-size: 16px; }
+  /* line 154, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+>>>>>>> b133a06fb16bf186459594e0504c4a5a66f2ae97
   html .form h2 {
     font-size: 20px; }
+  @media screen and (min-width: 900px) {
+    /* line 159, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    html .form p {
+      font-size: 24px; }
+    /* line 163, /home/owen/DevLeague/2 DevLeague Exercises/express-gallery/scss/styles.scss */
+    html .form h2 {
+      font-size: 30px; } }
