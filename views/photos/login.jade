@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  div(class="form")
+    h2 Please Enter Your Username and Password
+    p Username
+    input(type="text" id="username")
+    p Password
+    input(type="text" id="password")
+    br
+    button(id="login" class="btn btn-blue btn-border-o") Login
+    script(src="/js/login.js")
