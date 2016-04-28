@@ -9,3 +9,4 @@ var logOut = document.getElementById('logOut');
 logOut.addEventListener('click', function() {
   window.location='/logout';
 });
+

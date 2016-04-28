@@ -2,7 +2,8 @@
 const express = require('express'),
       router  = express.Router(),
       db = require('../models'),
-      Photo = db.Photo
+      Photo = db.Photo,
+      isAuthenticated = require('../middleware/isAuthenticated.js')
       ;
 
 router.route('/')
@@ -20,12 +21,12 @@ router.route('/')
   });
 
 router.route('/new')
-  .get(function(req, res) {
+  .get(isAuthenticated, function(req, res) {
     res.render('photos/new');
   });
 
 router.route('/:id')
-  .get(function(req, res) {
+  .get(isAuthenticated, function(req, res) {
     Photo.findAll({
       where : {
         id : req.params.id
@@ -51,7 +52,7 @@ router.route('/:id')
 
     });
   })
-  .put(function(req, res) {
+  .put(isAuthenticated, function(req, res) {
     Photo.update({
       author: req.body.author,
       link: req.body.link,
@@ -65,7 +66,7 @@ router.route('/:id')
       res.json({success: true});
     });
   })
-  .delete(function(req, res) {
+  .delete(isAuthenticated, function(req, res) {
     Photo.destroy({
       where : {
         id : req.params.id
@@ -77,7 +78,7 @@ router.route('/:id')
   });
 
 router.route('/:id/edit')
-  .get(function(req, res) {
+  .get(isAuthenticated, function(req, res) {
     Photo.findAll({
       where: {
         id: req.params.id

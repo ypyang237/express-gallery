@@ -1,12 +1,10 @@
-extends ../layout
-
-block content
-  div(class="form")
-    h2 Please Enter Your Username and Password
-    p Username
-    input(type="text" id="username")
-    p Password
-    input(type="text" id="password")
-    br
-    button(id="login" class="btn btn-blue btn-border-o") Login
-    script(src="/js/login.js")
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Login
+body
+  form(method="POST" action="/login")
+    input(type='text' name="username")
+    input(type='password' name="password")
+    button(type="submit")|Login

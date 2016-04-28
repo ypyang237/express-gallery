@@ -26,15 +26,9 @@ app
   .use(passport.initialize())
   .use(passport.session())
   .use(express.static('public'))
-  .use('/gallery', isAuthenticated, galleryRoute)
+  .use('/gallery', galleryRoute)
   ;
 
-  function isAuthenticated(req, res, next) {
-    if(!req.isAuthenticated()) {
-      return res.redirect('/login');
-    }
-    return next();
-  }
 
   passport.use(new LocalStrategy (
     function(username, password, done) {
@@ -46,7 +40,7 @@ app
       }
       var user = {
         name : USERNAME,
-        ROLE : 'ADMIN'
+        ROLE : 'ADMINS'
       };
       return done(null, user);
     }
@@ -75,12 +69,12 @@ app.get('/login', function(req, res) {
 
 app.get('/logout', function(req, res) {
   req.logout();
-  res.redirect('/login');
+  res.redirect('/');
 });
 
 
 app.post('/login', passport.authenticate('local', {
-  successRedirect : '/new',
+  successRedirect : '/gallery',
   failureRedirect : '/login'
   })
 );
