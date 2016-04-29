@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-html(lang="en")
-head
-  meta(charset="UTF-8")
-  title Login
-body
-  form(method="POST" action="/login")
+extends ../layout
+
+block content
+  form(method="POST" class="form" action="/login")
+    h3 UserName
     input(type='text' name="username")
+    h3 Password
     input(type='password' name="password")
-    button(type="submit")|Login
+    button(type="login" id="loginBtn" class="btn btn-blue btn-border-o")|Login
