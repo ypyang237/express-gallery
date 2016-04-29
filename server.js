@@ -84,7 +84,7 @@ app.post('/login',
 );
 
 app.get('/signUp', function(req, res){
-  res.render('photos/signup.jade');
+  res.render('photos/signup', {errormessage: req.flash('error')[0]});
 });
 
 app.post('/signUp', function(req,res){
