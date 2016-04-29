@@ -8,9 +8,10 @@ module.exports = function(sequelize, DataTypes) {
   }, {
     classMethods: {
       associate: function(models) {
-        console.log('models', models);
+        Photo.belongsTo(models.User);
       }
     }
   });
+
   return Photo;
 };
