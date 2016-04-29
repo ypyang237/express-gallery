@@ -8,9 +8,9 @@ button.addEventListener('click', function(event) {
   else if(event.target.id === 'delete') {
     var deleteReq = new XMLHttpRequest();
     deleteReq.addEventListener('load', function(data) {
-      var data = (JSON.parse(data.currentTarget.responseText));
+      var authorizedAction = (JSON.parse(data.currentTarget.responseText));
 
-      if(data.success){
+      if(authorizedAction.success){
         window.location='/gallery';
       }
       else{
