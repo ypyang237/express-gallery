@@ -70,20 +70,6 @@ app.post('/login', passport.authenticate('local', {
   })
 );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(3000, function() {
   db.sequelize.sync();
   console.log('server started at 3000!');
