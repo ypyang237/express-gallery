@@ -10,7 +10,7 @@ module.exports = {
     */
       return queryInterface.bulkInsert('Users', [{
         username: 'owen',
-        password: 'froggy',
+        password: '$2a$10$jBGGnlead4bRWim79i6i1OYK9Vd14GjW/1IMzgIN.2v8JYjD/Vn0O',
         createdAt : new Date(),
         updatedAt : new Date()
       }], {});

@@ -13,5 +13,8 @@ userAccess.addEventListener('click', function(event){
     case('new_photo'):
       window.location='/gallery/new';
       break;
+    case('signUp'):
+      window.location='/signUp';
+      break;
   }
 });

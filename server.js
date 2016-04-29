@@ -7,8 +7,8 @@ const express    = require('express'),
       passport = require('passport'),
       session = require('express-session'),
       LocalStrategy = require('passport-local').Strategy,
-      userData = require('./userData.json'),
-      User = db.User
+      User = db.User,
+      bcrypt = require('bcryptjs')
       ;
 
   app.set('view engine', 'jade');
@@ -35,12 +35,11 @@ app
     function(username, password, done) {
       User.findAll({
         where : {
-          username : username,
-          password : password
+          username : username
         }
       })
       .then(function(user){
-        if(user.length === 0){
+        if( bcrypt.compareSync(password, user[0].password) === false){
           return done(null, false);
         }
         return done(null, user);
@@ -49,21 +48,6 @@ app
 
     }
 
-
-
-    // function(username, password, done) {
-    //   var USERNAME = userData.username;
-    //   var PASSWORD = userData.password;
-
-    //   if(!(username === USERNAME && password === PASSWORD)) {
-    //     return done(null, false);
-    //   }
-    //   var user = {
-    //     name : USERNAME,
-    //     ROLE : 'ADMIN'
-    //   };
-    //   return done(null, user);
-    // }
 ));
 
 passport.serializeUser(function(user, done) {
@@ -83,12 +67,26 @@ app.get('/logout', function(req, res) {
   res.redirect('/');
 });
 
-
 app.post('/login', passport.authenticate('local', {
   successRedirect : '/gallery',
   failureRedirect : '/login'
   })
 );
+
+app.get('/signUp', function(req, res){
+  res.render('photos/signup.jade');
+});
+
+app.post('/signUp', function(req,res){
+  User.create({
+    username: req.body.username,
+    password: req.body.password
+  })
+  .then(function(){
+    res.redirect('/gallery');
+  });
+
+});
 
 app.listen(3000, function() {
   db.sequelize.sync();

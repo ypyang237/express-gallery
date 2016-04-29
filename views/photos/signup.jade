@@ -1,9 +1,9 @@
 extends ../layout
 
 block content
-  form(method="POST" class="form" action="/login")
+  form(method="POST" class="form" action="/signUp")
     h3 UserName
     input(type='text' name="username")
     h3 Password
     input(type='password' name="password")
-    button(id="loginBtn" class="btn btn-blue btn-border-o")|Login
+    button(id="signUpBtn" class="btn btn-blue btn-border-o") Sign Up
