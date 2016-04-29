@@ -8,11 +8,14 @@ const express    = require('express'),
       session = require('express-session'),
       LocalStrategy = require('passport-local').Strategy,
       User = db.User,
-      bcrypt = require('bcryptjs')
+      bcrypt = require('bcryptjs'),
+      flash = require('connect-flash')
       ;
 
   app.set('view engine', 'jade');
   app.set('views', './views');
+
+
 
 
 
@@ -26,6 +29,7 @@ app
   }))
   .use(passport.initialize())
   .use(passport.session())
+  .use(flash())
   .use(express.static('public'))
   .use('/gallery', galleryRoute)
   ;
@@ -39,8 +43,11 @@ app
         }
       })
       .then(function(user){
+        if( user.length === 0 ){
+          return done(null, false, {message: 'Username does not exist'});
+        }
         if( bcrypt.compareSync(password, user[0].password) === false){
-          return done(null, false);
+          return done(null, false, {message: 'Incorrect password'});
         }
         return done(null, user);
       });
@@ -58,8 +65,9 @@ passport.deserializeUser(function(user, done) {
   return done(null, user);
 });
 
+
 app.get('/login', function(req, res) {
-  res.render('photos/login.jade');
+  res.render('photos/login', {errormessage: req.flash('error')[0]});
 });
 
 app.get('/logout', function(req, res) {
@@ -67,9 +75,11 @@ app.get('/logout', function(req, res) {
   res.redirect('/');
 });
 
-app.post('/login', passport.authenticate('local', {
+app.post('/login',
+  passport.authenticate('local', {
   successRedirect : '/gallery',
-  failureRedirect : '/login'
+  failureRedirect : '/login',
+  failureFlash: true
   })
 );
 

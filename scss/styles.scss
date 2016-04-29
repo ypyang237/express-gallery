@@ -335,6 +335,12 @@ html {
   }
 
   .form {
+
+    .errormessage {
+      color: hsl(0, 80%, 70%);
+      font-size: 12px;
+    }
+
     p {
       margin-top: 10px;
       font-size: 16px;
