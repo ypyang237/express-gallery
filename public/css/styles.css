@@ -281,22 +281,38 @@ html {
     margin-left: 10%;
     font-family: 'Ubuntu', sans-serif; }
   /* line 62, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  html #userAccess {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+    justify-content: flex-end; }
+  /* line 71, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html #enterBtn {
     width: 100%; }
-  /* line 66, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 75, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  html #backBtn {
+    font-size: 12px;
+    padding: 2px;
+    line-height: 20px;
+    margin-left: 10%;
+    margin-top: 18px;
+    margin-bottom: 2px;
+    width: 80%; }
+  /* line 85, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html #delete {
     margin-left: 2px; }
-  /* line 70, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 89, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html #edit {
     margin-left: 10%; }
-  /* line 74, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 93, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html p {
     font-size: 12px;
     margin-left: 10%;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 5px; }
-  /* line 83, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 102, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html input {
     width: 80%;
     font-family: 'Ubuntu', sans-serif;
@@ -307,7 +323,7 @@ html {
     padding: 5px;
     border: 1px solid #ccc;
     color: gray; }
-  /* line 95, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 114, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html #description {
     margin-top: 6px;
     padding-top: 10px;
@@ -318,7 +334,7 @@ html {
     margin-left: 10%;
     border: 1px solid #ccc;
     color: gray; }
-  /* line 108, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 127, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html #editFieldsBtn {
     font-size: 12px;
     padding: 2px;
@@ -327,7 +343,7 @@ html {
     margin-top: 18px;
     margin-bottom: 2px;
     width: 80%; }
-  /* line 118, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 137, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html #submitNewPhoto {
     font-size: 12px;
     padding: 2px;
@@ -336,7 +352,7 @@ html {
     margin-top: 18px;
     margin-bottom: 2px;
     width: 80%; }
-  /* line 128, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 147, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html #container {
     display: flex;
     flex-wrap: wrap;
@@ -344,122 +360,117 @@ html {
     margin-right: 10%;
     max-width: 80%;
     justify-content: space-around; }
-    /* line 137, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+    /* line 156, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html #container .photo {
       margin-left: 1%;
       margin-right: 1%;
       margin-bottom: 20px; }
-      /* line 142, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 161, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html #container .photo p {
         margin-left: 0px; }
-      /* line 146, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 165, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html #container .photo img {
         max-height: 350px;
         max-width: 350px;
         margin-bottom: 5px; }
-  /* line 156, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
-  html #new_photo {
-    float: right;
-    margin-right: 10%;
-    margin-top: 0px; }
   @media screen and (max-width: 600px) {
     /* line 14, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html {
       background-color: lightblue; }
-      /* line 166, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 178, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html .side_photo {
         visibility: hidden;
         width: 0px; }
-      /* line 171, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 183, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html #main_photo {
         max-width: 350px; }
-        /* line 174, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+        /* line 186, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
         html #main_photo img {
           max-width: 350px; }
-        /* line 178, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+        /* line 190, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
         html #main_photo h3 {
           max-width: 350px; } }
   @media screen and (max-width: 980px) and (min-width: 600px) {
     /* line 14, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html {
       background-color: lightyellow; }
-      /* line 189, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 201, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html .side_photo {
         visibility: hidden;
         width: 0px; }
-      /* line 194, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 206, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html h2 {
         margin-left: 3%; } }
   @media screen and (min-width: 980px) {
     /* line 14, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html {
       background-color: floral-white; }
-      /* line 203, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 215, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html h1 {
         font-size: 60px; } }
-  /* line 210, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 222, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html .form p {
     margin-top: 10px;
     font-size: 16px; }
-  /* line 215, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 227, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html .form h2 {
     font-size: 20px; }
   @media screen and (min-width: 1024px) {
-    /* line 220, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+    /* line 232, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html .form p {
       font-size: 24px; }
-    /* line 224, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+    /* line 236, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html .form h2 {
       font-size: 30px; } }
-  /* line 231, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 243, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html #photo_title {
     margin-left: 0px; }
-    /* line 234, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+    /* line 246, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html #photo_title h2 {
       margin-left: 3%; }
-    /* line 238, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+    /* line 250, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html #photo_title h3 {
       margin-left: 3%; }
-  /* line 243, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+  /* line 255, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html article {
     display: flex;
     justify-content: center;
     max-width: 80%;
     margin-left: 10%; }
-    /* line 249, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+    /* line 261, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html article #main_photo {
       display: flex;
       flex-direction: column;
       align-items: flex-start; }
       @media screen and (min-width: 980px) {
-        /* line 249, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+        /* line 261, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
         html article #main_photo {
           max-width: 500px; }
-          /* line 257, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+          /* line 269, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
           html article #main_photo img {
             max-width: 500px; } }
-      /* line 262, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 274, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html article #main_photo h3 {
         margin-left: 2px;
         margin-top: 20px; }
-      /* line 269, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 281, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html article #main_photo h2 {
         margin-left: 0px; }
-      /* line 273, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 285, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html article #main_photo #edit {
         margin-left: 0px; }
-      /* line 277, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 289, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html article #main_photo #delete {
         margin-left: 0px; }
-    /* line 283, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+    /* line 295, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html article .side_photo {
       margin-left: 10px;
       display: flex;
       flex-direction: column;
       max-width: 40%; }
-      /* line 289, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 301, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html article .side_photo .each_side_photo {
         flex: 1 1 auto; }
-        /* line 292, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+        /* line 304, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
         html article .side_photo .each_side_photo img {
           max-width: 300px; }

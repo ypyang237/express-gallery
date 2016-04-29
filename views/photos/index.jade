@@ -3,8 +3,8 @@ extends ../layout
 block content
   div(id="userAccess")
     if(isLoggedIn)
-      button(id="logOut" class="btn btn-blue btn-border-o") Log Out
       button(id="new_photo" class="btn btn-blue btn-border-o") Add New Photo
+      button(id="logOut" class="btn btn-blue btn-border-o") Log Out
     else
       button(id="logIn" class="btn btn-blue btn-border-o") Log In
 
