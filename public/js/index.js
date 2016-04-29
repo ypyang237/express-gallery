@@ -1,12 +1,17 @@
 'use strict';
 
-var addButton = document.getElementById('new_photo');
-addButton.addEventListener('click', function(){
-  window.location='/gallery/new';
-});
+var userAccess = document.getElementById('userAccess');
 
-var logOut = document.getElementById('logOut');
-logOut.addEventListener('click', function() {
-  window.location='/logout';
+userAccess.addEventListener('click', function(event){
+  switch(event.target.id){
+    case('logIn'):
+      window.location='/login';
+      break;
+    case('logOut'):
+      window.location='/logout';
+      break;
+    case('new_photo'):
+      window.location='/gallery/new';
+      break;
+  }
 });
-

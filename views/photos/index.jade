@@ -1,10 +1,12 @@
 extends ../layout
 
-h1(id='indexHeader') Cool Photos
-
 block content
-  button(id="new_photo" class="btn btn-blue btn-border-o")|Add a Photo
-  button(id="logOut" class="btn btn-blue btn-border-o")|Log Out
+  div(id="userAccess")
+    if(isLoggedIn)
+      button(id="logOut" class="btn btn-blue btn-border-o") Log Out
+      button(id="new_photo" class="btn btn-blue btn-border-o") Add New Photo
+    else
+      button(id="logIn" class="btn btn-blue btn-border-o") Log In
 
   img(id="first_image" src="https://unsplash.it/1500/750")
 
@@ -15,6 +17,5 @@ block content
           img(src= photo.link)
         p= photo.author
         p= photo.link
-
 
   script(src="/js/index.js")

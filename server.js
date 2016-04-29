@@ -40,7 +40,7 @@ app
       }
       var user = {
         name : USERNAME,
-        ROLE : 'ADMINS'
+        ROLE : 'ADMIN'
       };
       return done(null, user);
     }
@@ -53,15 +53,6 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(user, done) {
   return done(null, user);
 });
-
-
-// app.get('gallery/new', isAuthenticated, function(req, res) {
-//   res.render('new.jade', {role : req.user.role});
-// });
-
-// app.get('gallery/:id/edit', isAuthenticated, function(req, res) {
-//   res.render('edit.jade', {role : req.user.role});
-// });
 
 app.get('/login', function(req, res) {
   res.render('photos/login.jade');
