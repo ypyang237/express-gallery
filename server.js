@@ -7,7 +7,8 @@ const express    = require('express'),
       passport = require('passport'),
       session = require('express-session'),
       LocalStrategy = require('passport-local').Strategy,
-      userData = require('./userData.json')
+      userData = require('./userData.json'),
+      User = db.User
       ;
 
   app.set('view engine', 'jade');
@@ -19,7 +20,7 @@ app
   .use(bodyParser.urlencoded({extended: true}))
   .use(bodyParser.json())
   .use(session({
-    secret : userData.secret,
+    secret : "chocolate",
     resave : true,
     saveUninitialized : true
   }))
@@ -32,18 +33,37 @@ app
 
   passport.use(new LocalStrategy (
     function(username, password, done) {
-      var USERNAME = userData.username;
-      var PASSWORD = userData.password;
+      User.findAll({
+        where : {
+          username : username,
+          password : password
+        }
+      })
+      .then(function(user){
+        if(user.length === 0){
+          return done(null, false);
+        }
+        return done(null, user);
+      });
 
-      if(!(username === USERNAME && password === PASSWORD)) {
-        return done(null, false);
-      }
-      var user = {
-        name : USERNAME,
-        ROLE : 'ADMIN'
-      };
-      return done(null, user);
+
     }
+
+
+
+    // function(username, password, done) {
+    //   var USERNAME = userData.username;
+    //   var PASSWORD = userData.password;
+
+    //   if(!(username === USERNAME && password === PASSWORD)) {
+    //     return done(null, false);
+    //   }
+    //   var user = {
+    //     name : USERNAME,
+    //     ROLE : 'ADMIN'
+    //   };
+    //   return done(null, user);
+    // }
 ));
 
 passport.serializeUser(function(user, done) {
