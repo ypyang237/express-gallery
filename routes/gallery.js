@@ -17,7 +17,12 @@ router.route('/')
       });
   })
   .post(function(req, res) {
-    Photo.create(req.body)
+    Photo.create({
+      author : req.body.author,
+      link   : req.body.link,
+      description : req.body.description,
+      UserId : req.user[0].id
+    })
     .then(function(){
       res.json({success: true});
     });
