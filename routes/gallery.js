@@ -75,13 +75,25 @@ router.route('/:id')
     });
   })
   .delete(isAuthenticated, function(req, res) {
-    Photo.destroy({
+    Photo.findAll({
       where : {
         id : req.params.id
       }
     })
-    .then(function(){
-      res.json({success: true});
+    .then(function(photo){
+      if(req.user[0].id === photo[0].dataValues.UserId) {
+        Photo.destroy({
+          where : {
+            id : req.params.id
+          }
+        })
+        .then(function(){
+          res.json({success: true});
+        });
+      }
+      else {
+        res.json({success: false});
+      }
     });
   });
 
