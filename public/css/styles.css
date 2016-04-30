@@ -329,19 +329,19 @@ html {
     font-size: 12px;
     padding: 2px;
     line-height: 20px;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: 18px;
     margin-bottom: 2px;
-    width: 100%; }
+    width: 80%; }
   /* line 122, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html #edit {
     font-size: 12px;
     padding: 2px;
     line-height: 20px;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: 18px;
     margin-bottom: 2px;
-    width: 100%; }
+    width: 80%; }
   /* line 132, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
   html p {
     font-size: 12px;
@@ -554,21 +554,15 @@ html {
       /* line 414, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html article #main_photo h2 {
         margin-left: 0px; }
-      /* line 418, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
-      html article #main_photo #edit {
-        margin-left: 0px; }
-      /* line 422, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
-      html article #main_photo #delete {
-        margin-left: 0px; }
-    /* line 428, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+    /* line 421, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
     html article .side_photo {
       margin-left: 10px;
       display: flex;
       flex-direction: column;
       max-width: 40%; }
-      /* line 434, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+      /* line 427, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
       html article .side_photo .each_side_photo {
         flex: 1 1 auto; }
-        /* line 437, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
+        /* line 430, /Users/PamelaYang/Desktop/DevLeague/express-gallery/scss/styles.scss */
         html article .side_photo .each_side_photo img {
           max-width: 300px; }
