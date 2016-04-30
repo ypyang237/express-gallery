@@ -113,20 +113,20 @@ html {
     font-size: 12px;
     padding: 2px;
     line-height: 20px;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: 18px;
     margin-bottom: 2px;
-    width: 100%;
+    width: 80%;
   }
 
   #edit {
     font-size: 12px;
     padding: 2px;
     line-height: 20px;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: 18px;
     margin-bottom: 2px;
-    width: 100%;
+    width: 80%;
   }
 
   p {
@@ -256,6 +256,13 @@ html {
     #main_photo {
       max-width: 300px;
 
+      .errormessage {
+      color: hsl(0, 80%, 70%);
+      font-size: 12px;
+      margin-left: 0px;
+      }
+
+
       img {
         max-width: 300px;
       }
@@ -292,6 +299,13 @@ html {
       h3 {
         margin-right: 0px;
         max-width: 500px;
+      }
+
+
+      .errormessage {
+      color: hsl(0, 80%, 70%);
+      font-size: 12px;
+      margin-left: 0px;
       }
     }
 
@@ -335,6 +349,12 @@ html {
   }
 
   .form {
+
+    .errormessage {
+      color: hsl(0, 80%, 70%);
+      font-size: 12px;
+    }
+
     p {
       margin-top: 10px;
       font-size: 16px;
@@ -369,6 +389,13 @@ html {
       flex-direction: column;
       align-items: flex-start;
 
+      .errormessage {
+      color: hsl(0, 80%, 70%);
+      font-size: 12px;
+      margin-left: 0px;
+      }
+
+
       @media screen and (min-width: $break-medium ) {
         max-width: 500px;
 
@@ -388,13 +415,6 @@ html {
         margin-left: 0px;
       }
 
-      #edit {
-        margin-left: 0px;
-      }
-
-      #delete {
-        margin-left: 0px;
-      }
 
     }
 

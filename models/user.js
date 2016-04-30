@@ -1,6 +1,8 @@
 'use strict';
 
-const   bcrypt = require('bcryptjs');
+const bcrypt = require('bcryptjs'),
+      Photo  = require('./Photo.js')
+;
 
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define('User', {
@@ -12,8 +14,14 @@ module.exports = function(sequelize, DataTypes) {
         var salt = bcrypt.genSaltSync(10);
         user.password = bcrypt.hashSync(user.password, salt);
       }
+    },
+    classMethods: {
+      associate: function(models){
+        User.hasMany(models.Photo);
+      }
     }
   });
+
 
   return User;
 };
