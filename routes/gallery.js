@@ -67,17 +67,30 @@ router.route('/:id')
     });
   })
   .put(isAuthenticated, function(req, res) {
-    Photo.update({
-      author: req.body.author,
-      link: req.body.link,
-      description: req.body.description
-    }, {
-      where: {
-        id: req.params.id
+    Photo.findAll({
+      where : {
+        id : req.params.id
       }
     })
-    .then(function(){
-      res.json({success: true});
+    .then(function(photo) {
+      if(req.user[0].id !== photo[0].dataValues.UserId) {
+        res.send('Can\'t touch this');
+      }
+      else {
+        Photo.update({
+          author: req.body.author,
+          link: req.body.link,
+          description: req.body.description
+        },
+        {
+          where: {
+            id: req.params.id
+          }
+        })
+        .then(function(){
+          res.json({success: true});
+        });
+      }
     });
   })
   .delete(isAuthenticated, function(req, res) {
@@ -111,9 +124,6 @@ router.route('/:id/edit')
       }
     })
     .then(function(photo){
-      // console.log('photo', photo[0].dataValues.UserId);
-      // console.log('myID', req.user[0].id);
-
       if(req.user[0].id === photo[0].dataValues.UserId) {
         console.log("here");
         res.render('photos/edit', {photo: photo[0].dataValues});
