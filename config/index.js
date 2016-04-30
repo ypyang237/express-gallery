@@ -1,10 +1,14 @@
-var config = require('./config') || {
-  development : {},
-  test : {},
-  production : {}
-};
+var config = process.env.NODE_ENV === 'production'
+  ? {
+    development: {},
+    test: {},
+    production: {}
+  }
+  : require('./config');
 
 module.exports = function() {
+
+console.log('USERNAME', process.env.USERNAME);
 
 return {
   "development": {
