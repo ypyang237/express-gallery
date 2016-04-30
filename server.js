@@ -111,7 +111,9 @@ app.post('/signUp', function(req,res){
   });
 });
 
-app.listen(3000, function() {
+var port = process.env.PORT || 3000;
+
+app.listen(port, function() {
   db.sequelize.sync();
   console.log('server started at 3000!');
 });
