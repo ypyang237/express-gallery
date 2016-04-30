@@ -1,5 +1,10 @@
 'use strict';
 
+var backBtn = document.getElementById('backBtn');
+backBtn.addEventListener('click', function(event) {
+  window.location=('/gallery');
+});
+
 var button = document.getElementById('photos');
 button.addEventListener('click', function(event) {
   if(event.target.id === 'edit') {
