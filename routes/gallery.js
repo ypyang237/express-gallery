@@ -134,8 +134,33 @@ router.route('/:id/edit')
       }
 
 
-
     });
+  });
+
+var faker = require('faker');
+
+router.route('/seed/:number')
+  .get(isAuthenticated, function(req, res) {
+    if(req.user[0].username === 'Pam'){
+
+      for(var i = 0; i < req.params.number; i++){
+        Photo.create({
+          author : faker.name.findName(),
+          link   : "https://unsplash.it/" + 500 + "/" + (350 + Math.floor( Math.random() * 100)),
+          description : faker.lorem.paragraph(),
+          UserId : req.user[0].id
+        })
+        .then(function(){
+          res.json({success: true});
+        });
+
+
+      }
+
+
+    }
+
+
   });
 
 module.exports = router;
