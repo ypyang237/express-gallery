@@ -14,7 +14,7 @@ button.addEventListener('click', function(event) {
         window.location='/gallery';
       }
       else{
-        alert("You cannot delete another user's photo");
+        document.getElementById('error').innerHTML = "You cannot delete another user's photo";
       }
     });
 

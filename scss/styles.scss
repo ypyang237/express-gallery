@@ -256,6 +256,13 @@ html {
     #main_photo {
       max-width: 300px;
 
+      .errormessage {
+      color: hsl(0, 80%, 70%);
+      font-size: 12px;
+      margin-left: 0px;
+      }
+
+
       img {
         max-width: 300px;
       }
@@ -292,6 +299,13 @@ html {
       h3 {
         margin-right: 0px;
         max-width: 500px;
+      }
+
+
+      .errormessage {
+      color: hsl(0, 80%, 70%);
+      font-size: 12px;
+      margin-left: 0px;
       }
     }
 
@@ -374,6 +388,13 @@ html {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
+      .errormessage {
+      color: hsl(0, 80%, 70%);
+      font-size: 12px;
+      margin-left: 0px;
+      }
+
 
       @media screen and (min-width: $break-medium ) {
         max-width: 500px;
