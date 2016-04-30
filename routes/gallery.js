@@ -50,10 +50,16 @@ router.route('/:id')
             photos[Math.floor(Math.random() * photos.length )]
           );
         }
+        var isUser = false;
+
+        if(req.user[0].id === photo[0].dataValues.UserId) {
+          isUser = true;
+        }
 
         res.render('photos/photo', {
           photo: photo[0],
-          otherPhotos: otherPhotos
+          otherPhotos: otherPhotos,
+          isUser: isUser
         });
       });
 
