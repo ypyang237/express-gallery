@@ -3,7 +3,24 @@
 var button = document.getElementById('photos');
 button.addEventListener('click', function(event) {
   if(event.target.id === 'edit') {
-    window.location='/gallery/' + event.target.dataset.id + '/edit';
+    var editReq = new XMLHttpRequest();
+    editReq.addEventListener('load', function(data) {
+      console.log('data', data);
+
+      try {
+        var authorizedAction = (JSON.parse(data.currentTarget.responseText));
+        if(!authorizedAction.success) {
+          document.getElementById('error').innerHTML = "You cannot edit another user's photo";
+        }
+      }
+      catch(err) {
+        window.location='/gallery/' + event.target.dataset.id + '/edit';
+      }
+
+    });
+
+    editReq.open('GET', '/gallery/' + event.target.dataset.id + '/edit');
+    editReq.send();
   }
 
   else if(event.target.id === 'delete') {

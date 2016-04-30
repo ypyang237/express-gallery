@@ -109,10 +109,12 @@ router.route('/:id/edit')
       // console.log('myID', req.user[0].id);
 
       if(req.user[0].id === photo[0].dataValues.UserId) {
+        console.log("here");
         res.render('photos/edit', {photo: photo[0].dataValues});
       }
       else {
-        res.json({authorization: false});
+        console.log("FALSE");
+        res.json({success: false});
       }
 
 
