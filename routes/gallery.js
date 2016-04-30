@@ -105,7 +105,18 @@ router.route('/:id/edit')
       }
     })
     .then(function(photo){
-      res.render('photos/edit', {photo: photo[0].dataValues});
+      // console.log('photo', photo[0].dataValues.UserId);
+      // console.log('myID', req.user[0].id);
+
+      if(req.user[0].id === photo[0].dataValues.UserId) {
+        res.render('photos/edit', {photo: photo[0].dataValues});
+      }
+      else {
+        res.json({authorization: false});
+      }
+
+
+
     });
   });
 
