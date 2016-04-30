@@ -25,10 +25,12 @@ return {
    "dialect": process.env.DIALECT || config.test.dialect
  },
  "production": {
-   "username": process.env.USERNAME || config.production.username,
-   "database": process.env.DATABASE || config.production.database,
-   "host": process.env.HOST || config.production.host,
-   "dialect": process.env.DIALECT || config.production.dialect
+   "host": process.env.HOST,
+   "database": process.env.DATABASE,
+   "username": process.env.USERNAME,
+   "password": process.env.PASSWORD,
+   "dialect": process.env.DIALECT,
+   "database_url": process.env.DATABASE_URL
  }
 };
 
