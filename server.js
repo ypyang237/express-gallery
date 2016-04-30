@@ -84,18 +84,31 @@ app.post('/login',
 );
 
 app.get('/signUp', function(req, res){
-  res.render('photos/signup', {errormessage: req.flash('error')[0]});
+  res.render('photos/signup', {errormessage: req.flash('regError')[0]});
 });
 
 app.post('/signUp', function(req,res){
-  User.create({
-    username: req.body.username,
-    password: req.body.password
-  })
-  .then(function(){
-    res.redirect('/gallery');
-  });
 
+  User.findAll({
+    where : {
+      username : req.body.username
+    }
+  })
+  .then(function(user){
+    if(user.length > 0){
+      req.flash('regError', 'Username already exists');
+      res.redirect('/signUp');
+    }
+    else {
+      User.create({
+        username: req.body.username,
+        password: req.body.password
+      })
+      .then(function(){
+        res.redirect('/gallery');
+      });
+    }
+  });
 });
 
 app.listen(3000, function() {
